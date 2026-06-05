@@ -1,4 +1,10 @@
 import streamlit as st
+import sys
+import os
+
+# Make sure Streamlit Cloud can find the src folder
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+
 from src.data.resume_parser import load_resume
 from src.data.job_api import fetch_jobs
 from src.nlp.skill_extraction import extract_skills
