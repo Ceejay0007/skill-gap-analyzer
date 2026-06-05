@@ -29,8 +29,7 @@ if uploaded_file:
 
     st.success("Resume uploaded successfully!")
 
-    # Parse resume
-    resume_text = load_resume("uploaded_resume.pdf")
+    # Extract skills
     resume_skills = extract_skills(resume_text)
 
     st.subheader("📌 Extracted Skills From Your Resume")
