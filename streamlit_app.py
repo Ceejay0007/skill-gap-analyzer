@@ -2,8 +2,12 @@ import streamlit as st
 import sys
 import os
 
-# Make sure Streamlit Cloud can find the src folder
-sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+# Fix module path for Streamlit Cloud
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+SRC_DIR = os.path.join(ROOT_DIR, "src")
+
+sys.path.append(ROOT_DIR)
+sys.path.append(SRC_DIR)
 
 from src.data.resume_parser import load_resume
 from src.data.job_api import fetch_jobs
