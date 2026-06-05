@@ -3,3 +3,4 @@ pdfplumber
 docx2txt
 requests
 docx2txt
+beautifulsoup4
