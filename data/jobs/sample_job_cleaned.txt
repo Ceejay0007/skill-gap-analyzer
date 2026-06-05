@@ -1,0 +1,2 @@
+We are looking for a Data Analyst with experience in Python, SQL, data cleaning,
+machine learning, and visualization tools such as Tableau or Power BI.
